@@ -3,4 +3,4 @@ import { listAllUsers } from "./listAllUsers";
 
 export const userRoutes = Router();
 
-userRoutes.use("/list-all", listAllUsers);
+userRoutes.route("/list-all").get(listAllUsers);
