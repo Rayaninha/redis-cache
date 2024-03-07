@@ -3,6 +3,6 @@ import { userRoutes } from "./controllers/routes";
 
 const app = express();
 
-app.listen(3333);
+app.listen(process.env.PORT);
 
 app.use("/", userRoutes);
